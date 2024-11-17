@@ -27,8 +27,11 @@ int rollDice(char * string){
             }
             dice = atoi(diceStr);
             finalValue = 0;
+            printf("Rolling %d times.\n", timesRolled);
+            printf("Rolling a d%d.\n", dice);
             if (dice > 0){
                 for(int j=0;j!=timesRolled;j++){
+                    
                     finalValue += ((rand()%dice)+1);
                 }
             }
